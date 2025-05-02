@@ -1,0 +1,88 @@
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.animation-wrapper {
+  position: relative;
+  background: #ffdfdf;
+  height: 100vh;
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 1rem;
+}
+
+.dot {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+}
+
+.dot::before,
+.dot::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  background: #000;
+  opacity: 0.3;
+  transform-origin: center;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Upward animation */
+.dot::before {
+  transform: translateY(0);
+  animation: pulseUp 3.5s infinite linear;
+  animation-delay: calc(var(--i) * 0.35s);
+}
+
+/* Downward animation */
+.dot::after {
+  transform: translateY(0);
+  animation: pulseDown 3.5s infinite linear;
+  animation-delay: calc(var(--i) * 0.35s);
+}
+
+@keyframes pulseUp {
+  30% {
+    transform: translateY(-4rem) scale(0.5);
+    opacity: 0.1;
+  }
+  55% {
+    transform: translateY(-6rem) scale(0.9);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-4rem) scale(1.2);
+  }
+}
+
+@keyframes pulseDown {
+  30% {
+    transform: translateY(4rem) scale(1.3);
+  }
+  55% {
+    transform: translateY(6rem) scale(0.9);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(4rem) scale(0.5);
+    opacity: 0.3;
+  }
+}

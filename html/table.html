@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Table</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/table.css" />
+
+    <!-- Embed fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <table class="table">
+        <colgroup>
+          <!-- Business Listing -->
+          <col style="width: 23%" />
+          <!-- Start Date -->
+          <col style="width: 14%" />
+          <!-- Vendor ID -->
+          <col style="width: 14%" />
+          <!-- Status -->
+          <col style="width: 16%" />
+          <!-- Region -->
+          <col style="width: 19%" />
+          <!-- Posts -->
+          <col style="width: 14%" />
+        </colgroup>
+
+        <!-- Table Head -->
+        <thead class="table__heading">
+          <th>Business Listing</th>
+          <th>Start Date</th>
+          <th>Vendor ID</th>
+          <th>Status</th>
+          <th>Region</th>
+          <th>Posts</th>
+        </thead>
+
+        <!-- Row Data -->
+        <tbody>
+          <!-- Item 1 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <div class="avatar__default" style="--bg-color: #e4daf4">
+                  <i class="fa-solid fa-user" style="--color: #4b04b2"></i>
+                </div>
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">Krusty Krab Ltd.</span>
+              </div>
+            </td>
+            <td class="date">8/21/15</td>
+            <td class="vendor-id">765594</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+
+            <td class="region">Canada (Central)</td>
+            <td class="posts">70</td>
+          </tr>
+
+          <!-- Item 2 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <img
+                  src="../assest/image/avatar-1.jpg"
+                  alt=""
+                  class="business__avatar"
+                />
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">NetRangler Inc.</span>
+              </div>
+            </td>
+            <td class="date">5/7/16</td>
+            <td class="vendor-id">558612</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">US East (Ohio)</td>
+            <td class="posts">41</td>
+          </tr>
+
+          <!-- Item 3  -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <img
+                  src="../assest/image/avatar-2.jpg"
+                  alt=""
+                  class="business__avatar"
+                />
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">ChumHum Ltd.</span>
+              </div>
+            </td>
+            <td class="date">5/19/12</td>
+            <td class="vendor-id">665137</td>
+            <td class="status">
+              <span class="status__label status-warning">Not Found</span>
+            </td>
+            <td class="region">EU (Ireland)</td>
+            <td class="posts">46</td>
+          </tr>
+
+          <!-- Item 4 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <div class="avatar__default" style="--bg-color: #ea5b61">
+                  <i class="fa-solid fa-user" style="--color: #fff"></i>
+                </div>
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">Rich Industries Co.</span>
+              </div>
+            </td>
+            <td class="date">9/4/12</td>
+            <td class="vendor-id">520015</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">EU (London)</td>
+            <td class="posts">15</td>
+          </tr>
+
+          <!-- Item 5 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <img
+                  src="../assest/image/avatar-4.jpg"
+                  alt=""
+                  class="business__avatar"
+                />
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">Wayne Industries Co.</span>
+              </div>
+            </td>
+            <td class="date">6/19/14</td>
+            <td class="vendor-id">204349</td>
+            <td class="status">
+              <span class="status__label status-warning">Not Found</span>
+            </td>
+            <td class="region">EU (Stockholm)</td>
+            <td class="posts">33</td>
+          </tr>
+
+          <!-- Item 6 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <img
+                  src="../assest/image/avatar-5.jpg"
+                  alt=""
+                  class="business__avatar"
+                />
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">Bubba Gump Co.</span>
+              </div>
+            </td>
+            <td class="date">11/7/16</td>
+            <td class="vendor-id">487441</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">Asia Pacific (Singapore)</td>
+            <td class="posts">79</td>
+          </tr>
+
+          <!-- Item 7 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <div class="avatar__default">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">Monsters Inc.</span>
+              </div>
+            </td>
+            <td class="date">3/4/16</td>
+            <td class="vendor-id">788187</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">EU (London)</td>
+            <td class="posts">17</td>
+          </tr>
+
+          <!-- Item 8 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <div class="avatar__default" style="--bg-color: #d255ec">
+                  <i class="fa-solid fa-user" style="--color: #fff"></i>
+                </div>
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">InGen Ltd.</span>
+              </div>
+            </td>
+            <td class="date">8/2/19</td>
+            <td class="vendor-id">809905</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">US West (N. California)</td>
+            <td class="posts">39</td>
+          </tr>
+
+          <!-- Item 9 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <img
+                  src="../assest/image/avatar-6.jpg"
+                  alt=""
+                  class="business__avatar"
+                />
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">Kwik-E-Mart Ltd.</span>
+              </div>
+            </td>
+            <td class="date">8/15/17</td>
+            <td class="vendor-id">172922</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">EU (Paris)</td>
+            <td class="posts">74</td>
+          </tr>
+
+          <!-- Item 10 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <div class="avatar__default" style="--bg-color: #ea5b61">
+                  <i class="fa-solid fa-user" style="--color: #fff"></i>
+                </div>
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">U.S. Robotics Inc.</span>
+              </div>
+            </td>
+            <td class="date">6/21/19</td>
+            <td class="vendor-id">295340</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">Asia Pacific (Tokyo)</td>
+            <td class="posts">32</td>
+          </tr>
+
+          <!-- Item 11 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <div class="avatar__default" style="--bg-color: #315af8">
+                  <i class="fa-solid fa-user" style="--color: #fff"></i>
+                </div>
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">Gryzzl Co.</span>
+              </div>
+            </td>
+            <td class="date">9/23/16</td>
+            <td class="vendor-id">030623</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">Asia Pacific (Singapore)</td>
+            <td class="posts">53</td>
+          </tr>
+
+          <!-- Item 12 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <div class="avatar__default" style="--bg-color: #e4daf4">
+                  <i class="fa-solid fa-user" style="--color: #4b04b2"></i>
+                </div>
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">Wonka Industries GmbH</span>
+              </div>
+            </td>
+            <td class="date">5/30/14</td>
+            <td class="vendor-id">448432</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">South America</td>
+            <td class="posts">25</td>
+          </tr>
+
+          <!-- Item 13 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <img
+                  src="../assest/image/avatar-3.jpg"
+                  alt=""
+                  class="business__avatar"
+                />
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">Buy'N'Large Ltd.</span>
+              </div>
+            </td>
+            <td class="date">1/31/14</td>
+            <td class="vendor-id">935910</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">Asia Pacific (Mumbai)</td>
+            <td class="posts">29</td>
+          </tr>
+
+          <!-- Item 14 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <img
+                  src="../assest/image/avatar-6.jpg"
+                  alt=""
+                  class="business__avatar"
+                />
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">Capsule Inc.</span>
+              </div>
+            </td>
+            <td class="date">2/11/12</td>
+            <td class="vendor-id">125629</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">Asia Pacific (Singapore)</td>
+            <td class="posts">43</td>
+          </tr>
+
+          <!-- Item 15 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <img
+                  src="../assest/image/avatar-1.jpg"
+                  alt=""
+                  class="business__avatar"
+                />
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">Soylent Co.</span>
+              </div>
+            </td>
+            <td class="date">10/28/12</td>
+            <td class="vendor-id">785681</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">EU (Frankfurt)</td>
+            <td class="posts">51</td>
+          </tr>
+
+          <!-- Item 16 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <div class="avatar__default" style="--bg-color: #d255ec">
+                  <i class="fa-solid fa-user" style="--color: #fff"></i>
+                </div>
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">Pizza Planet Inc.</span>
+              </div>
+            </td>
+            <td class="date">7/27/13</td>
+            <td class="vendor-id">550819</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">Asia Pacific (Seoul)</td>
+            <td class="posts">72</td>
+          </tr>
+
+          <!-- Item 17 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <div class="avatar__default">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">Umbrella Corp.</span>
+              </div>
+            </td>
+            <td class="date">8/16/13</td>
+            <td class="vendor-id">482650</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">Asia Pacific (Sydney)</td>
+            <td class="posts">56</td>
+          </tr>
+
+          <!-- Item 18 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <div class="avatar__default" style="--bg-color: #e4daf4">
+                  <i class="fa-solid fa-user" style="--color: #4b04b2"></i>
+                </div>
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">Sirius Cybernetics Co.</span>
+              </div>
+            </td>
+            <td class="date">12/10/13</td>
+            <td class="vendor-id">449003</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">US East (N. Virginia)</td>
+            <td class="posts">80</td>
+          </tr>
+
+          <!-- Item 19 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <div class="avatar__default" style="--bg-color: #315af8">
+                  <i class="fa-solid fa-user" style="--color: #fff"></i>
+                </div>
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">Madrigal Electromotive ...</span>
+              </div>
+            </td>
+            <td class="date">9/18/16</td>
+            <td class="vendor-id">247562</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">EU (Paris)</td>
+            <td class="posts">42</td>
+          </tr>
+
+          <!-- Item 20 -->
+          <tr class="table__data">
+            <td class="business">
+              <div class="business__group">
+                <img
+                  src="../assest/image/avatar-6.jpg"
+                  alt=""
+                  class="business__avatar"
+                />
+                <div class="business__icons">
+                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span class="business__name">Bluth Company Inc.</span>
+              </div>
+            </td>
+            <td class="date">1/15/12</td>
+            <td class="vendor-id">977094</td>
+            <td class="status">
+              <span class="status__label status-active">Active</span>
+            </td>
+            <td class="region">US West (Oregon)</td>
+            <td class="posts">52</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

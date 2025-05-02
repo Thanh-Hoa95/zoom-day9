@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.3;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table {
+  table-layout: fixed;
+  margin: 60px 0;
+  width: 100%;
+  border-collapse: collapse;
+  /* border-spacing: 0; */
+  font-size: 1.5rem;
+}
+
+th,
+td {
+  height: 58px;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+
+.table__heading th {
+  background: #ebebed;
+  border: 1.5px solid #fff;
+}
+
+.table__heading th:first-child {
+  border-left: 1px solid #ddd;
+}
+
+.table__heading th:last-child {
+  border-right: 1px solid #ddd;
+}
+
+th:nth-child(odd),
+.vendor-id,
+.region {
+  text-align: left;
+}
+
+th:last-child,
+.date,
+.posts {
+  text-align: right;
+}
+
+td {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  border: 1px solid #ddd;
+}
+
+.table__data:nth-child(even) {
+  background: #f5f7f7;
+}
+
+.status {
+  text-align: center;
+}
+
+.table__heading {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.business__group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.business__avatar,
+.avatar__default {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatar__default {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-color, #b7dab0);
+}
+
+.avatar__default > i {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+
+  font-size: 2.5rem;
+  color: var(--color, #57ab66);
+}
+
+.business__icons {
+  position: absolute;
+  left: 22px;
+  bottom: -4px;
+}
+
+.business__icons > i:first-child {
+  position: relative;
+  color: #4971db;
+  font-size: 1.2rem;
+}
+
+.business__icons > i:nth-child(2) {
+  position: absolute;
+  top: 6.6px;
+  right: 2.8px;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.status__label {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.status-active {
+  background: #e2efe6;
+  color: #4b9457;
+}
+
+.status-warning {
+  background: #fdf8e7;
+  color: #f2c616;
+}
