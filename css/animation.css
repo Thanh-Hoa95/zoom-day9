@@ -63,9 +63,9 @@ html {
     transform: translateY(-4rem) scale(0.5);
     opacity: 0.1;
   }
-  55% {
+  50% {
     transform: translateY(-6rem) scale(0.9);
-    opacity: 1;
+    opacity: 0.5;
   }
   75% {
     transform: translateY(-4rem) scale(1.2);
@@ -79,7 +79,7 @@ html {
   30% {
     transform: translateY(4rem) scale(1.3);
   }
-  55% {
+  50% {
     transform: translateY(6rem) scale(0.9);
     opacity: 1;
   }
