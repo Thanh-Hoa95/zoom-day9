@@ -38,7 +38,6 @@ html {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-
   background: #000;
   opacity: 0.3;
   transform-origin: center;
@@ -48,18 +47,18 @@ html {
 /* Upward animation */
 .dot::before {
   transform: translateY(0);
-  animation: pulseUp 3.5s infinite linear;
+  animation: dotUp 3.5s infinite linear;
   animation-delay: calc(var(--i) * 0.35s);
 }
 
 /* Downward animation */
 .dot::after {
   transform: translateY(0);
-  animation: pulseDown 3.5s infinite linear;
+  animation: dotDown 3.5s infinite linear;
   animation-delay: calc(var(--i) * 0.35s);
 }
 
-@keyframes pulseUp {
+@keyframes dotUp {
   30% {
     transform: translateY(-4rem) scale(0.5);
     opacity: 0.1;
@@ -71,9 +70,12 @@ html {
   75% {
     transform: translateY(-4rem) scale(1.2);
   }
+  100% {
+    opacity: 1;
+  }
 }
 
-@keyframes pulseDown {
+@keyframes dotDown {
   30% {
     transform: translateY(4rem) scale(1.3);
   }
@@ -84,5 +86,8 @@ html {
   75% {
     transform: translateY(4rem) scale(0.5);
     opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
   }
 }
